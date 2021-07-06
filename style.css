@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.weather-section {
+  position: relative;
+  background: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+
+  height: 100vh;
+  width: 100%;
+}
+
+.place-all-infos {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.place-name {
+
+  color: white;
+  font-size: 1.7rem;
+}
+
+.place-img {
+
+  width: 10rem;
+}
+
+.place-desc {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.place-temp {
+  color: white;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.degree-choices {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.degree-choices button:nth-child(1),
+.degree-choices button:nth-child(2),
+.degree-choices button:nth-child(3)
+ {
+  color: rgb(48,62,143);
+  background-color: white;
+  width: 8rem;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
